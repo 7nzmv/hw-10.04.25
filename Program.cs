@@ -82,3 +82,18 @@ var becameAdultWhileStudying = students.Where(s =>
  Console.WriteLine("\nTask 9: Became adult during study:");
  foreach (var s in becameAdultWhileStudying){
  Console.WriteLine($"{s.FirstName} {s.LastName}");}
+
+
+
+
+public class Student
+{
+    public int Id { get; set; }
+    public string FirstName { get; set; } = string.Empty;
+    public string LastName { get; set; } = string.Empty;
+    public int Age { get; set; }
+    public string Gender { get; set; }
+    public string Status { get; set; }
+    public DateTime DateOfStart { get; set; }
+    public DateTime DateOfFinish { get; set; }
+}
